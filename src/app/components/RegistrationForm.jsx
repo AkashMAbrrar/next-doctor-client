@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
+import { registerUser } from "../actions/auth/registerUser";
 
 const RegistrationForm = () => {
   const handleSubmit = async (e) => {
@@ -10,7 +11,7 @@ const RegistrationForm = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, email, password);
-    // await registerUser({ name, email, password });
+    await registerUser({ name, email, password });
   };
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-8">

@@ -51,13 +51,21 @@ const Navbar = () => {
             </ul>
           </div>
           <Link href={"/"} className="btn btn-ghost text-xl">
-            <Image src={"/assets/logo.svg"} width={50} height={50} />
+            <Image src={"/assets/logo.svg"} width={50} height={50} alt="logo" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="text-white font-bold  menu menu-horizontal px-1">
             {navMenu()}
           </ul>
+        </div>
+        <div className="navbar-end">
+          <Link href={"/login"} className="btn btn-outline btn-neutral">
+            Login
+          </Link>
+          <Link href={"/register"} className="ml-2 btn btn-outline btn-neutral">
+            Register
+          </Link>
         </div>
         <div className="navbar-end">
           <Link href={"/"} className="btn btn-outline text-white font-semibold">
