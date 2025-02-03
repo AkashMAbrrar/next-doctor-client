@@ -34,7 +34,9 @@ const ServicesSection = async () => {
                 </p>
               </div>
               <div>
-                <Link href={`/services`} className="text-orange-500">
+                <Link
+                  href={`/services/${item._id}`}
+                  className="text-orange-500">
                   <FaArrowRightLong />
                 </Link>
               </div>
