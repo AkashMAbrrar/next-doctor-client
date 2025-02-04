@@ -18,6 +18,7 @@ const page = async ({ params }) => {
             src={"/assets/images/checkout/checkout.png"}
             width={1150}
             height={300}
+            alt="image"
           />
           <div className="overlay_bg  absolute w-full h-full  top-0">
             <div className="w-full h-full flex items-center">
@@ -44,6 +45,7 @@ const page = async ({ params }) => {
             src={data.img}
             width={300}
             height={250}
+            alt="Image_bb"
           />
         </div>
         <div>
@@ -52,8 +54,6 @@ const page = async ({ params }) => {
           <FaArrowRightLong />
         </div>
       </section>
-      <p>{p.id}</p>
-      <p>{JSON.stringify(data)}</p>
     </div>
   );
 };
