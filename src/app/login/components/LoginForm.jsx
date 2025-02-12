@@ -3,6 +3,7 @@ import Link from "next/link";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import SocialLogin from "./SocialLogin";
 
 const LoginForm = () => {
   const router = useRouter();
@@ -60,7 +61,7 @@ const LoginForm = () => {
           Sign Up
         </button>
         <p className="text-center">Or Sign In with</p>
-        {/* <SocialLogin /> */}
+        <SocialLogin></SocialLogin>
         <p className="text-center">
           Don't Have an account?{" "}
           <Link href="/login" className="text-orange-500 font-bold">

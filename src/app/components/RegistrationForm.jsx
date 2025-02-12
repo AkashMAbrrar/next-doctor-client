@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { registerUser } from "../actions/auth/registerUser";
+import SocialLogin from "../login/components/SocialLogin";
 
 const RegistrationForm = () => {
   const handleSubmit = async (e) => {
@@ -52,7 +53,7 @@ const RegistrationForm = () => {
         Sign Up
       </button>
       <p className="text-center">Or Sign In with</p>
-      {/* <SocialLogin /> */}
+      <SocialLogin />
       <p className="text-center">
         Don't Have an account?{" "}
         <Link href="/login" className="text-orange-500 font-bold">

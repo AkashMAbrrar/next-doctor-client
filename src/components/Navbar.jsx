@@ -68,7 +68,17 @@ const Navbar = () => {
         <div className="navbar-end">
           {status === "authenticated" ? (
             <>
-              <ul>
+              <ul className="flex gap-2">
+                <li>
+                  <Image
+                    className="rounded-full"
+                    referrerPolicy="no-referrer"
+                    src={session?.user?.image || "/path/to/fallback-image.png"}
+                    width={50}
+                    height={50}
+                    alt="profile"
+                  />
+                </li>
                 <li>
                   <button
                     onClick={() => signOut()}
